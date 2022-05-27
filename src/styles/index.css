@@ -5,9 +5,16 @@
           box-sizing: border-box;
 }
 
+html {
+  height: 100%;
+}
+
 body {
   font-family: sans-serif;
-  height: 100vh;
+  height: 100%;
+  min-height: -webkit-fill-available;
+  min-height: -moz-available;
+  min-height: stretch;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -26,6 +33,7 @@ button {
   border: none;
   margin: 2px;
   font-size: 18px;
+  background: #ddd;
 }
 
 button:hover {
@@ -75,7 +83,7 @@ button:hover {
 }
 
 .current {
-  padding-bottom: .5rem;
+  padding-bottom: 0.5rem;
   font-size: 48px;
   font-weight: 500;
 }
